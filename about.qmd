@@ -2,4 +2,18 @@
 title: "About"
 ---
 
-About this site
+## Background
+
+I was born in India but grew up in Saudi Arabia, Kuwait, Bahrain, and Qatar and later moved to Canada in 2022 for my undergraduate. 
+I completed my bachelor's degree in Computing Science - Artificial Intelligence Major at the University of Alberta, where I developed an interest in programming, technology, and working with data.
+
+## Why Data Science
+
+During my undergraduate studies, I was curious about how data can be used to understand problems and make better decisions. 
+I joined the Master of Data Science program at UBC to build stronger technical and analytical skills and gain more hands-on experience working with real-world data.
+
+## Outside of Data Science
+
+Outside of university, I enjoy playing badminton, painting and drawing, and spending time outdoors. 
+I also love wildlife and enjoy visiting new places whenever I get the chance. 
+When I have some free time, you'll probably find me watching a movie, vibing to songs, or sleeping!
