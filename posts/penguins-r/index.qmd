@@ -7,6 +7,12 @@ date: 2026-09-27
 ## Question 
 Is the average flipper length different among penguin species?
 
+## Citation
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), based on data from Palmer Station LTER. License: CC-0
+
+Package citation: Horst AM, Hill AP, Gorman KB (2020)
+[palmerpenguins: Palmer Archipelago (Antarctica) penguin data](https://doi.org/10.5281/zenodo.3960218)
+
 
 ## Answer
 ```{r}

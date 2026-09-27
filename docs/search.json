@@ -14,6 +14,13 @@
     "text": "Is the average flipper length different among penguin species?"
   },
   {
+    "objectID": "posts/penguins-r/index.html#citation",
+    "href": "posts/penguins-r/index.html#citation",
+    "title": "Penguin Flipper Length by Species",
+    "section": "Citation",
+    "text": "Citation\nData: Palmer Penguins, based on data from Palmer Station LTER. License: CC-0\nPackage citation: Horst AM, Hill AP, Gorman KB (2020) palmerpenguins: Palmer Archipelago (Antarctica) penguin data"
+  },
+  {
     "objectID": "posts/penguins-r/index.html#answer",
     "href": "posts/penguins-r/index.html#answer",
     "title": "Penguin Flipper Length by Species",
