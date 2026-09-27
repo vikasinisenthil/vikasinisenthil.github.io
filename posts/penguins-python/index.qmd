@@ -1,0 +1,37 @@
+---
+title: "Penguin Bill Length by Species"
+author: "Vikasini Senthilkumar"
+date: 2026-09-27
+---
+## Question 
+Is the average bill length different among penguin species?
+
+## Citation
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), based on data from Palmer Station LTER. License: CC-0
+
+Package citation: Horst AM, Hill AP, Gorman KB (2020)
+[palmerpenguins: Palmer Archipelago (Antarctica) penguin data](https://doi.org/10.5281/zenodo.3960218)
+
+
+## Answer
+```{python}
+#| message: false
+from palmerpenguins import load_penguins
+penguin_data = load_penguins()
+penguin_data.head()
+```
+
+```{python}
+mean_bill_length = penguin_data.groupby("species")["bill_length_mm"].mean()
+```
+
+```{python}
+#| label: fig-bill-length
+#| fig-cap: "Average bill length by species."
+import matplotlib.pyplot as plt
+mean_bill_length.plot.bar()
+plt.ylabel("Average bill length")
+plt.show
+```
+
+Chinstrap penguins have the longest average flippers, followed by Gentoo penguins and then Adelie penguins.

@@ -1,0 +1,37 @@
+---
+title: "Penguin Flipper Length by Species"
+author: "Vikasini Senthilkumar"
+date: 2026-09-27
+---
+
+## Question 
+Is the average flipper length different among penguin species?
+
+## Citation
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), based on data from Palmer Station LTER. License: CC-0
+
+Package citation: Horst AM, Hill AP, Gorman KB (2020)
+[palmerpenguins: Palmer Archipelago (Antarctica) penguin data](https://doi.org/10.5281/zenodo.3960218)
+
+
+## Answer
+```{r}
+#| message: false
+library(palmerpenguins)
+penguin_data <- palmerpenguins::penguins
+head(penguin_data)
+```
+
+```{r}
+mean(penguin_data$flipper_length_mm[penguin_data$species == "Adelie"], na.rm = TRUE)
+mean(penguin_data$flipper_length_mm[penguin_data$species == "Chinstrap"], na.rm = TRUE)
+mean(penguin_data$flipper_length_mm[penguin_data$species == "Gentoo"], na.rm = TRUE)
+```
+
+```{r}
+#| label: fig-flippers
+#| fig-cap: "Average flipper length by species."
+barplot(tapply(penguin_data$flipper_length_mm, penguin_data$species, mean, na.rm = TRUE))
+```
+
+Gentoo penguins have the longest average flippers, followed by Chinstrap penguins and then Adelie penguins.
